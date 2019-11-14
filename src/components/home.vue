@@ -81,7 +81,6 @@ export default {
     async getMenuList() {
       const { data: res } = await menu_ios()
       if (res.meta.status !== 200) return this.$message.error(res.meta.msg)
-      console.log(res, 333)
       this.menulist = res.data
     },
     toggleCollapse() {
